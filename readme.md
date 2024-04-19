@@ -4,7 +4,7 @@
 
 ![](overview.png)
 
-This repo contains a demonstration of dspy Module and ReACT agentic-pattern with a watsonx.ai language model, local instance of MilvusDB and embeddings model.
+This repo contains a demonstration of AI Agent that follows the ReACT agentic-pattern build with DSPy.ReAct and a watsonx.ai language model. This demonstration uses a local instance of MilvusDB as a datastore for domain knowledge, a dataset (HotPotQA loaded in memory) for optimising the dspy Module and a local embeddings model.
 
 # Quick Start
 
