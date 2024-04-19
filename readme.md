@@ -1,8 +1,10 @@
-# DSPy ReACT Single Agent Example
+# watsonx.ai DSPy ReACT Single Agent Example
 
 # Overview
 
 ![](overview.png)
+
+This repo contains a demonstration of dspy Module and ReACT agentic-pattern with a watsonx.ai model and local instance of MilvusDB.
 
 # Quick Start
 

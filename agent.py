@@ -13,9 +13,7 @@ import dspy
 from watsonxModel import watsonx
 
 dspy.settings.configure(lm=watsonx, trace=[], temperature=0.7)
-
 retriever_model = MilvusRM(collection_name="wikipedia_articles",uri="http://localhost:19530")
-
 dspy.settings.configure(rm=retriever_model)
 
 # signature for our RAG Agent
@@ -31,7 +29,7 @@ class RAG(dspy.Module):
         super().__init__()
 
         self.retrieve = retriever_model #dspy.Retrieve(k=num_passages)
-        self.generate_answer = dspy.ChainOfThought(signature=GenerateAnswer) #dspy.ReAct(GenerateAnswer) #dspy.Predict(GenerateAnswer) 
+        self.generate_answer = dspy.ReAct(signature=GenerateAnswer) #dspy.ReAct(GenerateAnswer) #dspy.Predict(GenerateAnswer) 
     
     def forward(self, question):
         context = self.retrieve(question).passages
