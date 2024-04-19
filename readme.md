@@ -2,7 +2,7 @@
 
 # Overview
 
-[](overview.png)
+![](overview.png)
 
 # Quick Start
 
