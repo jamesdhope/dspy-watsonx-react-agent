@@ -2,11 +2,14 @@
 
 # Overview
 
-()[overview.png]
+[](overview.png)
 
-# pre-reqs
+# Quick Start
 
-- `!pip install dspy-ai`
-- `docker-compose up`
-- export env vars `WATSONX_URL`, `WATSONX_APIKEY`, `WATSONX_PROJECTID`
+- install dependencies (requirements.txt TBC)
+- export `WATSONX_URL`, `WATSONX_APIKEY`, `WATSONX_PROJECTID` as envars
+- Launch Milvus `docker-compose up`
+- Load the collection, go to `http://localhost:8010` and login with `http://milvus-standalone:19530`
+- Load the data `load_data.py`
+- Run the agent `agent.py`
 

@@ -4,3 +4,4 @@ local_cache/
 volumes/
 assertion.log
 azure_openai_useage.log
+.gitignore
